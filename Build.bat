@@ -80,7 +80,7 @@ for %%F in (!TFs!) do (
         mkdir "!OUT!"
 
         echo Publishing NET: %%F / %%R
-        dotnet publish "%CSProj%" -c "%CONFIG%" -f "%%F" -r "%%R" ^ -o "!OUT!" -p:NoWarn=CS0618 || echo Failed %%F/%%R
+        dotnet publish "%CSProj%" -c "%CONFIG%" -f "%%F" -r "%%R" -o "!OUT!" || echo Failed %%F/%%R
         copy /Y "C:\Users\Chaos\RiderProjects\GhostInTheCodeLogo\LICENSE.md" "!OUT!\LICENSE.md"
         copy /Y "C:\Users\Chaos\RiderProjects\GhostInTheCodeLogo\README.md" "!OUT!\README.md"
         set "ZIP_OUT=%OUTPUT_DIR%\NET\!TF_NAME!-!RID_FLAT!.zip"

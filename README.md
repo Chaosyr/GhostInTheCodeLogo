@@ -24,7 +24,6 @@ Configuring will require either Forking or Downloading this repository, rather t
        7. linux-musl-x64
        8. linux-musl-arm64
        9. osx-x64 (MacOS)
-       10. browser-wasm
     2. Runtimes/Frameworks
        1. netframework4.7.2
        2. netframework4.8
